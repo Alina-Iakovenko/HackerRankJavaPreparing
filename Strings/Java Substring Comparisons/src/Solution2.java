@@ -18,7 +18,7 @@ public class Solution2 {
             // but it looks like there are problems with auto-tests too
 
         String[] charactersRows = new String[s.length()-k+1];
-        for (int i = 0; i+k <= s.length(); i++) {
+        for (int i = 0; i <= s.length()-k; i++) {
             charactersRows[i] = s.substring(i, i+k);
         }
 
