@@ -1,5 +1,3 @@
-//import java.util.ArrayList;
-//import java.util.Comparator;
 import java.util.Scanner;
 
 public class Solution2 {
@@ -11,6 +9,14 @@ public class Solution2 {
         // Complete the function
         // 'smallest' must be the lexicographically smallest substring of length 'k'
         // 'largest' must be the lexicographically largest substring of length 'k'
+
+            // There is a problem on HackerRank in this task: you can`t edit above these comment-lines =
+            // you can`t add
+            // import java.util.ArrayList;
+            // import java.util.Comparator;
+
+            // but it looks like there are problems with auto-tests too
+
         String[] charactersRows = new String[s.length()-k+1];
         for (int i = 0; i+k <= s.length(); i++) {
             charactersRows[i] = s.substring(i, i+k);
